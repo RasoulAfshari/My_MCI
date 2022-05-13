@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".login_net">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="400sp"
+        android:layout_height="700sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2022_05_12_124242" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:background="#226E5D5D"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="بسته نوترینو"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/img_btn_logout"
+        android:layout_width="60sp"
+        android:layout_height="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icons8_right_30" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="40sp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/icons8_down_23"
+        android:gravity="right|center_vertical"
+        android:text="تمام بسته ها"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="140sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="140sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2,100 تومان"
+        android:textColor="#2962FF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام بسته"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام بسته"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آنفا +"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 گیگ"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="یک ماهه"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35,000 تومان"
+        android:textColor="#2962FF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حجم"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اعتبار زمان مطرح"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="هزینه فعال سازی"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آلفا +"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/txtview_net1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250 مگ"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="یک روزه"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حجم"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اعتبار زمان مطرح"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="هزینه فعال سازی"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_net_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="30sp"
+        android:text="فعال سازی بسته "
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_net_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="30sp"
+        android:text="فعال سازی بسته "
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

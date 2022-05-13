@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frm1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:text="ثبت نام"
+                android:textColor="#2C2C2C"
+                android:textSize="17dp"
+                app:backgroundTint="#C1C1C1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.762"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chbax"
+                app:layout_constraintVertical_bias="0.133" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.956"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Register"
+                app:layout_constraintVertical_bias="0.914"
+                app:srcCompat="@drawable/_024_1024" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.mci.ir"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_log_in"
+                app:layout_constraintVertical_bias="0.922" />
+
+            <CheckBox
+                android:id="@+id/chbax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="نمایش رمز عبور"
+                android:textAllCaps="false"
+                android:textDirection="ltr"
+                android:textIsSelectable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_pass"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <ImageView
+                android:id="@+id/asd"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/unnamed" />
+
+            <Button
+                android:id="@+id/btn_log_in"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:text="ورود"
+                android:textSize="20dp"
+                app:backgroundTint="#FF6130"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.234"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chbax"
+                app:layout_constraintVertical_bias="0.133" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:drawableLeft="@drawable/icons8_iphone_x_24"
+                android:ems="10"
+                android:hint="شماره تلفن همراه"
+                android:inputType="phone"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/asd"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <TextView
+                android:id="@+id/txt_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C10000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Register"
+                app:layout_constraintVertical_bias="0.598" />
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:drawableLeft="@drawable/icons8_lock_24"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="رمز عبور"
+                android:inputType="textPersonName"
+                android:password="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_phone"
+                app:layout_constraintVertical_bias="0.071" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frm_Register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/unnamed" />
+
+            <EditText
+                android:id="@+id/reg_edt_phone"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:drawableLeft="@drawable/icons8_iphone_x_24"
+                android:ems="10"
+                android:hint="شماره تلفن همراه"
+                android:inputType="phone"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.075" />
+
+            <EditText
+                android:id="@+id/reg_edt_pass"
+                android:layout_width="350sp"
+                android:layout_height="50sp"
+                android:drawableLeft="@drawable/icons8_lock_24"
+                android:ems="10"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_edt_phone"
+                app:layout_constraintVertical_bias="0.09" />
+
+            <Button
+                android:id="@+id/reg_btn_Register"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:text="ثبت نام"
+                android:textColor="#2C2C2C"
+                android:textSize="17dp"
+                app:backgroundTint="#C1C1C1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_chbax"
+                app:layout_constraintVertical_bias="0.125" />
+
+            <CheckBox
+                android:id="@+id/reg_chbax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نمایش رمز عبور"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_edt_pass"
+                app:layout_constraintVertical_bias="0.048" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.956"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_btn_Register"
+                app:layout_constraintVertical_bias="0.909"
+                app:srcCompat="@drawable/_024_1024" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.mci.ir"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_btn_Register"
+                app:layout_constraintVertical_bias="0.918" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
